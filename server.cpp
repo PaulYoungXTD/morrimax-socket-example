@@ -92,7 +92,7 @@ int main() {
     
     /*
        Call receive until we have finished reading the client's request.
-       Each call to receive produces [1, max(msgsize, bufsize)] bytes.
+       Each call to receive produces [1, min(msgsize, bufsize)] bytes.
          - Given the following code, how do you tell if you recieved the end
            of the message?
     */
